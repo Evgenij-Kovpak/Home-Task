@@ -4,32 +4,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HomeTask_11
+namespace HomeTask_12
 {
     class Program
+   
     {
+        static void Swap(ref int e1, ref int e2)
+        {
+            var temp = e1;
+            e1 = e2;
+            e2 = temp;
+        }
+
+        static int [] BubbleSort(int [] array)
+        {
+            var len = array.Length;
+            for (var i = 1; i < len; i++)
+            {
+                for (var j = 1; j < len - i; j++)
+                {
+                    if(array[j] > array[j + 1])
+                    {
+                        Swap(ref array[j], ref array[j + 1]);
+                    }
+                }
+            }
+            return array;
+        }
         static void Main(string[] args)
         {
-           
-            for (int i = 0; i < 3; i++)
+            Console.WriteLine("Bubble sort");
+            Console.Write("Input array element ");
+            var parts = Console.ReadLine().Split(new[] { " ", ",", ";" }, StringSplitOptions.RemoveEmptyEntries);
+            var array = new int[parts.Length];
+            for(int i =0; i < parts.Length; i++)
             {
-                Console.Write("Введите n= ");
-                int a = Convert.ToInt32(Console.ReadLine());
-              
-                Console.WriteLine(fakt(a));
-                Console.ReadKey();
+                array[i] = Convert.ToInt32(parts[i]);
             }
-        }
-        
-        
-        static Int64 fakt(int n)
-        {
-            Int64 f;
-            if (n < 1)
-                f = 1;
-            else
-                f = fakt(n - 1) * n;
-            return f;
+            Console.WriteLine("Отсортированный массив: {0}", string.Join(", ", BubbleSort(array)));
+            Console.ReadLine();
         }
     }
 }
