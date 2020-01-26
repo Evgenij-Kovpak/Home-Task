@@ -1,0 +1,6 @@
+C:\Users\evgen\source\repos\User_folder\User_folder\bin\Debug\User_folder.exe.config
+C:\Users\evgen\source\repos\User_folder\User_folder\bin\Debug\User_folder.exe
+C:\Users\evgen\source\repos\User_folder\User_folder\bin\Debug\User_folder.pdb
+C:\Users\evgen\source\repos\User_folder\User_folder\obj\Debug\User_folder.csprojAssemblyReference.cache
+C:\Users\evgen\source\repos\User_folder\User_folder\obj\Debug\User_folder.exe
+C:\Users\evgen\source\repos\User_folder\User_folder\obj\Debug\User_folder.pdb

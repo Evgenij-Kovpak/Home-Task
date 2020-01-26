@@ -1,0 +1,3 @@
+C:\Users\evgen\source\repos\User_folder\User_folder\bin\Debug\User_folder.exe
+C:\Users\evgen\source\repos\User_folder\User_folder\bin\Debug\User_folder.exe.config
+C:\Users\evgen\source\repos\User_folder\User_folder\bin\Debug\User_folder.pdb
